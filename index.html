@@ -164,12 +164,58 @@
     .about-content p {
       margin-bottom: 1.2rem;
     }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      .controller-section,
+      .data-section {
+        grid-template-columns: 1fr !important;
+        flex-direction: column !important;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+
+      .controller-image img,
+      .data-section img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .data-text,
+      .controller-content {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .controller-image,
+      .data-section .controller-image {
+        margin-top: 1.5rem;
+      }
+
+      .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Rover for Smart Agriculture</h1>
-    <p>In the ever-evolving world of agriculture, innovation is no longer a luxury — it’s a necessity. That’s where AURA comes in. Designed with cutting-edge technology, rugged engineering, and the specific needs of modern farmers in mind, our intelligent agricultural rover is transforming the way crops are grown, monitored, and managed.</p>
+    <p>In the ever-evolving world of agriculture, innovation is no longer a luxury — it’s a necessity. That’s where AURA comes in...</p>
   </header>
 
   <section class="features">
@@ -193,9 +239,7 @@
   <section class="controller-section">
     <div class="controller-content">
       <h2>Control Your Rover</h2>
-      <p>ccess the AI Rover Control Panel effortlessly through a powerful and user-friendly local server interface. From this centralized hub, you can take full command of your rover’s operations — guiding navigation, assigning field tasks, and running diagnostics with ease. Whether you're directing the rover through complex terrain or monitoring its performance in real time, the interface puts all essential functions just a click away.internet connection is required, ensuring reliability and full control, even in remote field conditions.
-
-</p>
+      <p>Access the AI Rover Control Panel effortlessly through a powerful and user-friendly local server interface...</p>
       <a href="http://192.168.194.148" class="btn">Visit Server</a>
     </div>
     <div class="controller-image">
@@ -206,7 +250,7 @@
   <section class="data-section">
     <div class="data-text">
       <h2>Access Collected Data</h2>
-      <p>Review sensor readings, environmental conditions, and operational logs directly from the AI Rover's onboard systems. Stay informed with real-time data to improve farm productivity and sustainability.</p>
+      <p>Review sensor readings, environmental conditions, and operational logs directly from the AI Rover's onboard systems...</p>
       <a href="http://192.168.1.204/" class="btn">Open Local Server</a>
     </div>
     <div class="controller-image">
@@ -216,16 +260,16 @@
 
   <section class="footer">
     <h2>Grow Smarter with AURA</h2>
-    <p>Boost efficiency, reduce labor, and improve yields with our smart agricultural rover. It offers real-time crop monitoring, precise navigation, automated tasks, and data insights — all tailored to modern farming needs.</p>
+    <p>Boost efficiency, reduce labor, and improve yields with our smart agricultural rover...</p>
   </section>
 
   <section class="about-section">
     <button class="about-toggle" onclick="toggleAbout()">About Us</button>
     <div id="aboutContent" class="about-content">
-      <p><strong>Tanish – Web Designer & Support Contributor:</strong> Designed and built the website landing page to showcase the rover’s features clearly and professionally. Also contributed across various areas of the project by supporting team members wherever needed.</p>
-      <p><strong>Harsimar – Hardware & Systems Engineer:</strong> Managed all hardware components — wiring, sensor integration, and system assembly. Programmed and tested the embedded systems to ensure the rover’s real-world performance was smooth, stable, and reliable.</p>
-      <p><strong>Kaushal – Software Developer:</strong> Created the software that powers the rover, including automation, task control, and user interface functionality. Ensured smooth interaction between the rover’s systems and its local control panel.</p>
-      <p><strong>Kavish – Mechanical & Structural Designer:</strong> Designed and constructed the rover’s mechanical frame, ensuring durability, balance, and functionality. Built a sturdy structure that could handle rough terrain while supporting all internal electronics and components.</p>
+      <p><strong>Tanish – Web Designer & Support Contributor:</strong> ...</p>
+      <p><strong>Harsimar – Hardware & Systems Engineer:</strong> ...</p>
+      <p><strong>Kaushal – Software Developer:</strong> ...</p>
+      <p><strong>Kavish – Mechanical & Structural Designer:</strong> ...</p>
     </div>
   </section>
 
