@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Rover for Smart Agriculture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f0fdf4, #dcfce7);
+      color: #065f46;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.125rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+    .btn {
+      background-color: #16a34a;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card i {
+      color: #16a34a;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #4b5563;
+    }
+    .controller-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      gap: 2rem;
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .controller-content {
+      text-align: left;
+    }
+    .controller-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .controller-section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #4b5563;
+    }
+    .controller-image {
+      text-align: center;
+    }
+    .controller-image img {
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .data-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      background-color: #e7f5ec;
+      border-radius: 1rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    .data-text {
+      max-width: 60%;
+    }
+    .data-text h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #065f46;
+    }
+    .data-text p {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 1.5rem;
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem 4rem;
+    }
+    .footer h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .footer p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Rover for Smart Agriculture</h1>
+    <p>Revolutionizing farming with cutting-edge autonomous technology, designed to optimize yields, monitor crops, and preserve resources.</p>
+    <button class="btn">Get Started</button>
+  </header>
+
+  <section class="features">
+    <div class="card">
+      <i data-feather="cpu"></i>
+      <h2>Smart Navigation</h2>
+      <p>The AI Rover autonomously navigates fields with precision, avoiding obstacles and optimizing routes.</p>
+    </div>
+    <div class="card">
+      <i data-feather="activity"></i>
+      <h2>Crop Monitoring</h2>
+      <p>Real-time crop health analysis using AI vision and sensor data to help farmers act fast.</p>
+    </div>
+    <div class="card">
+      <i data-feather="droplet"></i>
+      <h2>Soil Analysis</h2>
+      <p>Monitors soil moisture, nutrients, and pH to support informed farming decisions.</p>
+    </div>
+  </section>
+
+  <section class="controller-section">
+    <div class="controller-content">
+      <h2>Control Your Rover</h2>
+      <p>Access the AI Rover control panel via the local server interface. Easily manage navigation, task assignments, and diagnostics.</p>
+      <a href="http://192.168.194.148" class="btn">Visit Server</a>
+    </div>
+    <div class="controller-image">
+      <img src="https://images.unsplash.com/photo-1578333792218-1e3d7a531ff3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="AI Rover Controller Interface">
+    </div>
+  </section>
+
+  <section class="data-section">
+    <div class="data-text">
+      <h2>Access Collected Data</h2>
+      <p>Review sensor readings, environmental conditions, and operational logs directly from the AI Rover's onboard systems. Stay informed with real-time data to improve farm productivity and sustainability.</p>
+      <a href="http://192.168.1.204/" class="btn">Open Local Server</a>
+    </div>
+    <div class="controller-image">
+      <img src="https://images.unsplash.com/photo-1610484826194-d3f56c858f47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Collected Data Dashboard">
+    </div>
+  </section>
+
+  <section class="footer">
+    <h2>Grow Smarter with AI</h2>
+    <p>The AI Rover empowers modern agriculture with sustainable, data-driven solutions tailored for farmers and the future of food production.</p>
+  </section>
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
